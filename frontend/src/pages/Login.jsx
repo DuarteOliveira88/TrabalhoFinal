@@ -59,7 +59,7 @@ export default function Login() {
             <br />
             <br />
             <br />
-            <h2>Login</h2>
+            <h2>Loginn</h2>
             <br />
             <br />
             <div>
