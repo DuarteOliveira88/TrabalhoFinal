@@ -15,6 +15,7 @@ import { Loja } from './pages/Loja';
 
 
 
+
 const router = createBrowserRouter([
   {
     path: '/',
