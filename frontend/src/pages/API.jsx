@@ -14,7 +14,7 @@ export default function API() {
     <div>
       <h1>Filmes Star Wars</h1>
 
-      {films.length === 0 && <p className="noresult-text">A carregar...</p>}
+      {films.length === 0 && <p className="noresult-text">A  carregar...</p>}
 
       {films.length > 0 && (
         <ul className="film-list">
