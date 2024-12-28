@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Botao_verde from "../components/Botao_verde";
+import {Link, useRouteLoaderData} from "react-router-dom";
+
 
 export function Loja() {
   const [activeTab, setActiveTab] = useState("Tab1");
@@ -10,7 +12,12 @@ export function Loja() {
 
   return (
     <>
-      <h1>Loja123</h1>
+      <h1>Loja</h1>
+
+      <div>
+      <h2>API</h2>
+      <p><Link to="../API">API</Link></p>
+      </div>
       <div style={styles.tabsContainer}>
         <Botao_verde
           onSelect={() => handleTabSelect("Tab1")}

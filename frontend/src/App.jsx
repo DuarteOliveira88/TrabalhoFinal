@@ -7,6 +7,7 @@ import HomePage from './pages/Homepage';
 import Login from './pages/Login';
 import Register from './pages/Register'
 
+import API from './pages/API';
 
 
 
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
       { path: '/login', element: <Login /> },
       { path: '/registo', element: <Register /> },
       { path: '/loja', element: <Loja /> },
+      { path: '/API', element: <API /> },
 
 
       
