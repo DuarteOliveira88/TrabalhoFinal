@@ -1,47 +1,57 @@
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+
 import Logo from '../images/Logo.png';
+
+import all from '../images/logos/all.png';
+import pay from '../images/pay.png';
+
+
+
 
 const styles = {
   footer: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: '10px 20px',
-    backgroundColor: '#333333',
-    color: '#fff',
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "20px 40px", 
+    backgroundColor: "#333333",
+    color: "#fff",
+    width: "100%", 
+    boxSizing: "border-box", 
   },
   leftSection: {
-    display: 'flex',
-    alignItems: 'center',
+    display: "flex",
+    alignItems: "center",
   },
   logo: {
-    cursor: 'pointer',
+    cursor: "pointer",
+    width: "auto",
+    height: "80px", 
+    objectFit: "contain",
   },
   navLinks: {
-    display: 'flex',
-    listStyle: 'none',
+    display: "flex",
+    listStyle: "none",
     margin: 0,
     padding: 0,
   },
   navItem: {
-    margin: '0 10px',
+    margin: "0 10px",
   },
   link: {
-    textDecoration: 'none',
-    color: '#fff',
-    fontWeight: 'bold',
+    textDecoration: "none",
+    color: "#fff",
+    fontWeight: "bold",
   },
   icons: {
-    display: 'flex',
-    marginLeft: '20px',
-  },
-  icon: {
-    fontSize: '18px',
-    marginLeft: '15px',
-    cursor: 'pointer',
-    color: '#fff',
+    display: "flex",
+    alignItems: "center",
+    gap: "20px",
   },
 };
+
+
+
+
 
 const Footer = () => {
   return (
@@ -63,11 +73,23 @@ const Footer = () => {
           <a href="/privacy" style={styles.link}>Politica de Privacidade</a>
         </li>
       </ul>
-      <div style={styles.icons}>
-        <FaFacebook style={styles.icon} />
-        <FaTwitter style={styles.icon} />
-        <FaInstagram style={styles.icon} />
+      <div>
+        <div></div>
+      <img src= {all} style={{ width: '150px', height: '150px',  borderRadius: '50%', marginRight:'30px' }} alt="Facebook Logo" />
+      <img src={pay} style={{ width: '200px', height: '100px'}} alt="pay" />
+      
+      
+
+      
+
+      
+
+
+
       </div>
+      
+     
+      
     </footer>
   );
 };
