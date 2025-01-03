@@ -16,6 +16,7 @@ export function Loja() {
 
       <div>
       <h2>API</h2>
+      div
       <p><Link to="../API">API</Link></p>
       </div>
       <div style={styles.tabsContainer}>
