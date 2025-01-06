@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Botao_verde from "../components/Botao_verde";
 import { Link } from "react-router-dom";
 import produtos from '../data/produtos.json';
-//import '../style.css';
+import '../style.css';
 
 export function Loja() {
   console.log({ produtos });
