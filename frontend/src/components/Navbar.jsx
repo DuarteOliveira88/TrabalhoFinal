@@ -25,6 +25,8 @@ const Navbar = () => {
         <div style={styles.icons}>
           <FaSearch style={styles.icon} />
           <FaShoppingCart style={styles.icon} />
+          <a href="/Car" style={styles.link}>Carrinho</a>
+
         </div>
       </div>
     </nav>

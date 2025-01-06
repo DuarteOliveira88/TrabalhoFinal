@@ -5,7 +5,8 @@ import './App.css'
 import RootLayout from './pages/RootLayout';
 import HomePage from './pages/Homepage';
 import Login from './pages/Login';
-import Register from './pages/Register'
+import Register from './pages/Register';
+import Car from './pages/Car';
 
 import API from './pages/API';
 
@@ -30,6 +31,7 @@ const router = createBrowserRouter([
       { path: '/registo', element: <Register /> },
       { path: '/loja', element: <Loja /> },
       { path: '/API', element: <API /> },
+      { path: '/Car', element: <Car /> },
 
 
       
