@@ -12,7 +12,7 @@ export default function API() {
 
   return (
     <div>
-      <h1>Filmes Star Wars</h1>
+      <h1>Filmes Star War</h1>
 
       {films.length === 0 && <p className="noresult-text">A carregar...</p>}
 
