@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Botao_verde from "../components/Botao_verde";
-import {Link, useRouteLoaderData} from "react-router-dom";
-import  produtos  from '../data/produtos.json'
-
+import { Link } from "react-router-dom";
+import produtos from '../data/produtos.json';
+//import '../style.css';
 
 export function Loja() {
-  console.log({produtos})
+  console.log({ produtos });
   const [activeTab, setActiveTab] = useState("Tab1");
 
   const handleTabSelect = (tab) => {
@@ -15,12 +15,10 @@ export function Loja() {
   return (
     <>
       <h1>Loja</h1>
-      
 
       <div>
-      <h2>API</h2>
-      div
-      <p><Link to="../API">API</Link></p>
+        <h2>API</h2>
+        <p><Link to="../API">API</Link></p>
       </div>
       <div style={styles.tabsContainer}>
         <Botao_verde
@@ -36,6 +34,19 @@ export function Loja() {
           Tab 2
         </Botao_verde>
       </div>
+
+      <div>
+        <h2>Produtos</h2>
+        <ul>
+          {produtos.map((produto, index) => (
+            <li key={index}>
+              <h3>{produto.nome}</h3>
+              <p>{produto.descricao}</p>
+              <p>Preço: {produto.preco}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
     </>
   );
 }
@@ -48,3 +59,6 @@ const styles = {
     marginTop: "20px",
   },
 };
+
+
+
