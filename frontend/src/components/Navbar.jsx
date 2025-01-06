@@ -60,7 +60,7 @@ const styles = {
     logo: {
       height: "10px", 
       marginRight: "10px",
-      objectFit: "contain", // Mantém as proporções
+      objectFit: "contain", 
     },
     rightSection: {
       display: "flex",

@@ -1,7 +1,11 @@
+body {
+margin:0px;
+}
+
 .logo {
-  height: 10px; /* Ajuste o tamanho */
+  height: 10px; 
   margin-right: 10px;
-  object-fit: contain; /* Mantém as proporções */
+  object-fit: contain; 
 }
 
 
