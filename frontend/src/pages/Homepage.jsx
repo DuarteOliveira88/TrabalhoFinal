@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Banner from "../images/Banner.jpg";
-import Banner2 from "../images/Banner2.png";
+
 import Banner3 from "../images/Banner3.png";
 import Banner4 from "../images/Banner4.png";
 import Banner5 from "../images/Banner5.png";
