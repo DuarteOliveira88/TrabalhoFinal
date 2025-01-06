@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Botao_verde from "../components/Botao_verde";
 import {Link, useRouteLoaderData} from "react-router-dom";
+import  produtos  from '../data/produtos.json'
 
 
 export function Loja() {
+  console.log({produtos})
   const [activeTab, setActiveTab] = useState("Tab1");
 
   const handleTabSelect = (tab) => {
@@ -13,6 +15,7 @@ export function Loja() {
   return (
     <>
       <h1>Loja</h1>
+      
 
       <div>
       <h2>API</h2>

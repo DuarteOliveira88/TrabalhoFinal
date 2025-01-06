@@ -5,6 +5,7 @@ import Banner from "../images/Banner.jpg";
 import Banner3 from "../images/Banner3.png";
 import Banner4 from "../images/Banner4.png";
 import Banner5 from "../images/Banner5.png";
+import Banner6 from "../images/Banner6.png";
 import consola from "../images/consola.png"; 
 import jogos from "../images/jogos.png";
 import monitor from "../images/monitor.png";
@@ -33,12 +34,14 @@ export default function HomePage() {
         <img src={consola} alt="Image 1" style={{ width: '25%' }} /> 
         <img src={jogos} alt="Image 2" style={{ width: '25%' }} /> 
         <img src={monitor} alt="Image 3" style={{ width: '25%' }} /> 
-        <img src={computadores} alt="Image 4" style={{ width: '25%' }} /> </div>
+        <img src={computadores} alt="Image 4" style={{ width: '25%' }} /> 
+        </div>
       
       
       <div>
-        <img src={Banner4} alt="Banner4" style={styles.banner}  />
-        <img src={Banner5} alt="Banner4" style={styles.banner}  />
+       
+        <img src={Banner6} alt="Banner4" style={styles.banner}  />
+        
       </div>
 
      
