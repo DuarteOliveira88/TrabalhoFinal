@@ -7,6 +7,45 @@ body {
   color: #333;
 }
 
+
+
+a {
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+a:hover {
+  color: #ff9800;
+  text-shadow: 0px 0px 5px rgba(255, 152, 0, 0.8);
+}
+
+.icon {
+  transition: transform 0.2s, color 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  color: #ff9800;
+}
+
+.footer a {
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.footer a:hover {
+  color: #ff9800;
+  text-shadow: 0px 0px 5px rgba(255, 152, 0, 0.8);
+}
+
+.icons > * {
+  transition: transform 0.2s, color 0.3s;
+}
+
+.icons > *:hover {
+  transform: scale(1.1);
+  color: #ff9800;
+}
+
+
 h1, h2 {
   color: #444;
   text-align: center;
@@ -48,7 +87,7 @@ a:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Loja Component */
+
 .tabsContainer button {
   background-color: #007bff;
   color: #fff;
@@ -71,8 +110,8 @@ ul {
 li {
   margin: 10px 0;
   padding: 10px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #8BC141;
+  
   border-radius: 5px;
   transition: box-shadow 0.2s;
 }
