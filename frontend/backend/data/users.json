@@ -1,0 +1,13 @@
+[
+    {
+    "email": "cliente@gmail.com",
+    "password": "a",
+    "confirmPassword": "a",
+    "nome": "Duarte",
+    "sobrenome": "Oliveira",
+    "telemovel":"987654321",
+    "termsEmail": "on",
+    "termsSMS": "on",
+    "termsPolitica": "on"
+}
+]
