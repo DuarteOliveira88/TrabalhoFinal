@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import produtos from '../data/produtos.json'; // Dados fictícios dos produtos
+import produtos from '../data/produtos.json'; 
 
 export default function Car() {
   const [cart, setCart] = useState([]);
 
-  // Função para adicionar produto ao carrinho
+  
   const addToCart = (produto) => {
     setCart([...cart, produto]);
   };
 
-  // Função para remover produto do carrinho
+ 
   const removeFromCart = (produtoId) => {
     setCart(cart.filter(produto => produto.id !== produtoId));
   };
 
-  // Calcular o preço total
+ 
   const getTotal = () => {
     return cart.reduce((total, produto) => total + parseFloat(produto.preco), 0).toFixed(2);
   };
