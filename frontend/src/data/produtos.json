@@ -1,0 +1,59 @@
+[
+    {
+      "id": "c1",
+      "categoria": "Consolas",
+      "nome": "PlayStation 5",
+      "descricao": "Consola de última geração com gráficos incríveis e desempenho rápido.",
+      "preco": "499.99"
+    },
+    {
+      "id": "c2",
+      "categoria": "Consolas",
+      "nome": "Xbox Series X",
+      "descricao": "Consola poderosa com suporte para jogos em 4K e alta taxa de frames.",
+      "preco": "499.99"
+    },
+    {
+      "id": "j1",
+      "categoria": "Jogos",
+      "nome": "The Legend of Zelda: Breath of the Wild",
+      "descricao": "Jogo de aventura e exploração no vasto mundo de Hyrule.",
+      "preco": "59.99"
+    },
+    {
+      "id": "j2",
+      "categoria": "Jogos",
+      "nome": "Cyberpunk 2077",
+      "descricao": "Jogo de RPG ambientado em um futuro distópico com gráficos impressionantes.",
+      "preco": "49.99"
+    },
+    {
+      "id": "m1",
+      "categoria": "Monitores",
+      "nome": "Dell UltraSharp 27",
+      "descricao": "Monitor de 27 polegadas com resolução 4K e cores precisas.",
+      "preco": "399.99"
+    },
+    {
+      "id": "m2",
+      "categoria": "Monitores",
+      "nome": "Samsung Odyssey G9",
+      "descricao": "Monitor curvo de 49 polegadas com taxa de atualização de 240Hz.",
+      "preco": "1499.99"
+    },
+    {
+      "id": "pc1",
+      "categoria": "Computadores",
+      "nome": "MacBook Pro",
+      "descricao": "Laptop poderoso com chip M1 e tela Retina de 13 polegadas.",
+      "preco": "1299.99"
+    },
+    {
+      "id": "pc2",
+      "categoria": "Computadores",
+      "nome": "Dell XPS 13",
+      "descricao": "Laptop compacto com tela InfinityEdge e desempenho robusto.",
+      "preco": "999.99"
+    }
+  ]
+  

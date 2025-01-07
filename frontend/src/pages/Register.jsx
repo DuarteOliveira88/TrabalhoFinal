@@ -73,14 +73,7 @@ export default function Registo() {
         <label htmlFor="confirmPassword">Confirmar Password:</label>
         <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirme sua password" required />
       </div>
-      <div>
-        <label htmlFor="role">Função:</label>
-        <select id="role" name="role" required>
-          <option value="gestor">Gestor</option>
-          <option value="cozinha">Cozinha</option>
-          <option value="consumidor">Consumidor</option>
-        </select>
-      </div>
+      
       <button type="submit">Registar</button>
     </form>
   );

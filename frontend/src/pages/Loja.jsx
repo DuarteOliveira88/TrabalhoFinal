@@ -1,47 +1,91 @@
-import React, { useState } from "react";
-import Botao_verde from "../components/Botao_verde";
-import {Link, useRouteLoaderData} from "react-router-dom";
-
+import React from "react";
+import { Link } from "react-router-dom";
+import produtos from '../data/produtos.json';
+import '../style.css';
 
 export function Loja() {
-  const [activeTab, setActiveTab] = useState("Tab1");
-
-  const handleTabSelect = (tab) => {
-    setActiveTab(tab);
-  };
-
   return (
     <>
-      <h1>Loja</h1>
+      <h1 style={styles.pageTitle}>Loja</h1>
 
       <div>
-      <h2>API</h2>
-      div
-      <p><Link to="../API">API</Link></p>
+        <h2>API</h2>
+        <p><Link to="../API" style={styles.apiLink}>API</Link></p>
       </div>
-      <div style={styles.tabsContainer}>
-        <Botao_verde
-          onSelect={() => handleTabSelect("Tab1")}
-          isActive={activeTab === "Tab1"}
-        >
-          Tab 1
-        </Botao_verde>
-        <Botao_verde
-          onSelect={() => handleTabSelect("Tab2")}
-          isActive={activeTab === "Tab2"}
-        >
-          Tab 2
-        </Botao_verde>
+
+      <div style={styles.productsContainer}>
+        <h2>Produtos</h2>
+        <div style={styles.productGrid}>
+          {produtos.map((produto, index) => (
+            <div key={index} style={styles.productCard}>
+              <img src={produto.imagem} alt={produto.nome} style={styles.productImage} />
+              <div style={styles.productInfo}>
+                <h3>{produto.nome}</h3>
+                <p>{produto.descricao}</p>
+                <p style={styles.productPrice}>Preço: R$ {produto.preco}</p>
+                <Link to={`/produto/${produto.id}`} style={styles.productLink}>Ver mais</Link>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );
 }
 
 const styles = {
-  tabsContainer: {
-    display: "flex",
-    justifyContent: "center",
-    gap: "10px",
-    marginTop: "20px",
+  pageTitle: {
+    textAlign: "center",
+    marginBottom: "20px",
+    fontSize: "2.5em",
+    color: "#333"
+  },
+  apiLink: {
+    color: "#3498db",
+    textDecoration: "none",
+  },
+  productsContainer: {
+    marginTop: "40px",
+  },
+  productGrid: {
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
+    gap: "20px",
+    padding: "0 10px",
+  },
+  productCard: {
+    border: "1px solid #ddd",
+    borderRadius: "8px",
+    boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+    overflow: "hidden",
+    textAlign: "center",
+    padding: "10px",
+    backgroundColor: "#fff",
+  },
+  productImage: {
+    width: "100%",
+    height: "200px",
+    objectFit: "cover",
+    borderRadius: "5px",
+    marginBottom: "10px",
+  },
+  productInfo: {
+    padding: "10px",
+  },
+  productPrice: {
+    fontWeight: "bold",
+    color: "#2ecc71",
+    marginBottom: "10px",
+  },
+  productLink: {
+    color: "#3498db",
+    textDecoration: "none",
+    fontSize: "1.1em",
+    fontWeight: "bold",
   },
 };
+
+
+
+
+
