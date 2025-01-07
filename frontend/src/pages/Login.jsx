@@ -40,8 +40,8 @@ export default function Login() {
             })
             .then((data) => {
                 console.log(data);
-                
                 localStorage.setItem('token', data.token);
+                localStorage.setItem('email', authData.email)
                 localStorage.setItem('role', data.role);
                 navigate('/'); 
             })
